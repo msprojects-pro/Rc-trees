@@ -31,12 +31,12 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#F7F8F3] text-[#20251C]">
+    <div className="min-h-screen flex flex-col bg-[#F7F8F3] text-[#20251C] overflow-x-hidden w-full max-w-full">
       {/* 1. Navigation Bar */}
       <Navbar onQuoteClick={() => scrollToContact()} />
 
       {/* Main Content Sections */}
-      <main className="flex-1">
+      <main className="flex-1 w-full max-w-full overflow-x-hidden">
         {/* 2. Hero Section */}
         <Hero
           onQuoteClick={() => scrollToContact()}

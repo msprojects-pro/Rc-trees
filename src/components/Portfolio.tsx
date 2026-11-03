@@ -14,26 +14,26 @@ export const Portfolio: React.FC<PortfolioProps> = ({ onDiscussClick }) => {
   const [patioSrc, setPatioSrc] = useState(patioImageLocal || '/images/gallery_outdoor_patio.jpg');
 
   return (
-    <section id="our-work" className="py-20 bg-white border-b border-[#E2E7D9]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="our-work" className="py-16 sm:py-20 bg-white border-b border-[#E2E7D9] w-full max-w-full overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-          <div>
-            <div className="text-xs font-bold tracking-wider text-[#7CA22B] uppercase mb-2">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 sm:mb-12">
+          <div className="max-w-2xl">
+            <div className="text-[11px] sm:text-xs font-bold tracking-wider text-[#7CA22B] uppercase mb-2">
               LANDSCAPING INSPIRATION
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#26391B] tracking-tight">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[#26391B] tracking-tight">
               Outdoor Spaces, Transformed
             </h2>
-            <p className="mt-3 text-base sm:text-lg text-[#687064] max-w-2xl">
+            <p className="mt-2 sm:mt-3 text-sm sm:text-base lg:text-lg text-[#687064]">
               From fresh lawn laying and perennial borders to heavy-duty perimeter fencing and contemporary porcelain paving.
             </p>
           </div>
 
           <button
             onClick={onDiscussClick}
-            className="inline-flex items-center gap-2 px-6 py-3.5 text-sm font-semibold text-white bg-[#7CA22B] hover:bg-[#6e9026] active:bg-[#607e21] rounded-lg transition-colors shrink-0 self-start md:self-auto cursor-pointer"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold text-white bg-[#7CA22B] hover:bg-[#6e9026] active:bg-[#607e21] rounded-lg transition-colors shrink-0 w-full sm:w-auto cursor-pointer"
           >
             <span>Discuss Your Garden Project</span>
             <ArrowRight className="w-4 h-4" />

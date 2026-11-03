@@ -3,8 +3,8 @@ import { Phone, MessageSquare } from 'lucide-react';
 
 export const CTASection: React.FC = () => {
   return (
-    <section className="bg-[#26391B] py-16 lg:py-20 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section className="bg-[#26391B] py-14 sm:py-16 lg:py-20 text-white w-full max-w-full overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
         <div className="max-w-3xl mx-auto">
           
           <span className="text-xs font-bold tracking-wider text-[#7CA22B] uppercase mb-3 block">

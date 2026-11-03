@@ -26,18 +26,18 @@ export const Navbar: React.FC<NavbarProps> = ({ onQuoteClick }) => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-[#26391B] border-b border-[#314823] shadow-md">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between gap-8 h-20">
+    <header className="sticky top-0 z-50 bg-[#26391B] border-b border-[#314823] shadow-md w-full max-w-full">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between gap-3 sm:gap-6 md:gap-8 h-18 sm:h-20 min-w-0">
           {/* Zone 1: Brand title, one line */}
           <a
             href="#home"
-            className="flex items-center gap-2.5 text-xl font-bold tracking-tight text-white whitespace-nowrap shrink-0 hover:text-[#7CA22B] transition-colors"
+            className="flex items-center gap-2 sm:gap-2.5 text-base sm:text-lg lg:text-xl font-bold tracking-tight text-white hover:text-[#7CA22B] transition-colors min-w-0 shrink"
           >
-            <div className="w-10 h-10 rounded-lg bg-[#314823] flex items-center justify-center shrink-0 border border-[#3f5c2c]">
-              <Trees className="w-6 h-6 text-[#7CA22B]" />
+            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-[#314823] flex items-center justify-center shrink-0 border border-[#3f5c2c]">
+              <Trees className="w-5 h-5 sm:w-6 sm:h-6 text-[#7CA22B]" />
             </div>
-            <span>R.C Tree's &amp; Landscaping</span>
+            <span className="truncate">R.C Tree's &amp; Landscaping</span>
           </a>
 
           {/* Zone 2: Concise single-line navigation links */}
@@ -72,19 +72,19 @@ export const Navbar: React.FC<NavbarProps> = ({ onQuoteClick }) => {
             </button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="flex sm:hidden items-center gap-2">
+          {/* Mobile Action Buttons */}
+          <div className="flex sm:hidden items-center gap-1.5 shrink-0">
             <a
               href="tel:+447386994511"
-              className="w-10 h-10 rounded-lg bg-[#314823] flex items-center justify-center text-white border border-[#3f5c2c]"
+              className="w-9 h-9 rounded-lg bg-[#314823] flex items-center justify-center text-white border border-[#3f5c2c] active:scale-95 transition-transform"
               aria-label="Call R.C Tree's & Landscaping"
             >
-              <Phone className="w-5 h-5 text-[#7CA22B]" />
+              <Phone className="w-4 h-4 text-[#7CA22B]" />
             </a>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-lg text-white hover:bg-[#314823] transition-colors"
+              className="p-1.5 rounded-lg text-white hover:bg-[#314823] transition-colors active:scale-95"
               aria-label="Toggle navigation menu"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

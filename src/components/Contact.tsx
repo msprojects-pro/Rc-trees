@@ -93,23 +93,23 @@ export const Contact: React.FC<ContactProps> = ({ initialService }) => {
   );
 
   return (
-    <section id="contact" className="py-20 bg-[#F7F8F3] border-b border-[#E2E7D9]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-16 sm:py-20 bg-[#F7F8F3] border-b border-[#E2E7D9] w-full max-w-full overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         
         {/* Section Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="text-xs font-bold tracking-wider text-[#7CA22B] uppercase mb-3">
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <div className="text-[11px] sm:text-xs font-bold tracking-wider text-[#7CA22B] uppercase mb-2 sm:mb-3">
             GET A FREE QUOTATION
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#26391B] tracking-tight mb-4">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[#26391B] tracking-tight mb-3 sm:mb-4">
             Let's Talk About Your Garden
           </h2>
-          <p className="text-base sm:text-lg text-[#687064] leading-relaxed">
+          <p className="text-sm sm:text-base lg:text-lg text-[#687064] leading-relaxed">
             Fill out the form below or contact us directly via Phone or WhatsApp for quick advice and a free estimate.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
           
           {/* Left Column: Direct Contact Info & Area */}
           <div className="lg:col-span-5 flex flex-col gap-6">
@@ -183,10 +183,10 @@ export const Contact: React.FC<ContactProps> = ({ initialService }) => {
               </div>
 
               {/* Direct Buttons */}
-              <div className="mt-8 pt-6 border-t border-[#E2E7D9] grid grid-cols-2 gap-3">
+              <div className="mt-8 pt-6 border-t border-[#E2E7D9] grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <a
                   href="tel:+447386994511"
-                  className="flex items-center justify-center gap-2 py-3 px-4 text-sm font-semibold text-white bg-[#7CA22B] hover:bg-[#6e9026] rounded-lg transition-colors text-center"
+                  className="flex items-center justify-center gap-2 py-3 px-4 text-sm font-semibold text-white bg-[#7CA22B] hover:bg-[#6e9026] rounded-lg transition-colors text-center w-full"
                 >
                   <Phone className="w-4 h-4" />
                   <span>Call Now</span>
@@ -195,7 +195,7 @@ export const Contact: React.FC<ContactProps> = ({ initialService }) => {
                   href="https://wa.me/447386994511?text=Hello%2C%20I'd%20like%20to%20enquire%20about%20your%20landscaping%20services%20and%20request%20a%20free%20quote."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 py-3 px-4 text-sm font-semibold text-[#26391B] bg-[#EDF2E4] hover:bg-[#dfe6d4] border border-[#E2E7D9] rounded-lg transition-colors text-center"
+                  className="flex items-center justify-center gap-2 py-3 px-4 text-sm font-semibold text-[#26391B] bg-[#EDF2E4] hover:bg-[#dfe6d4] border border-[#E2E7D9] rounded-lg transition-colors text-center w-full"
                 >
                   <MessageSquare className="w-4 h-4 text-[#7CA22B]" />
                   <span>WhatsApp</span>

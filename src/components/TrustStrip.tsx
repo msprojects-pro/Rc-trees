@@ -21,8 +21,8 @@ export const TrustStrip: React.FC = () => {
   ];
 
   return (
-    <section className="bg-white border-b border-[#E2E7D9] py-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="bg-white border-b border-[#E2E7D9] py-8 w-full max-w-full overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
           {trustItems.map((item, idx) => {
             const Icon = item.icon;

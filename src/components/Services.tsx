@@ -67,18 +67,18 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService }) => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-[#F7F8F3] border-b border-[#E2E7D9]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" className="py-16 sm:py-20 bg-[#F7F8F3] border-b border-[#E2E7D9] w-full max-w-full overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="text-xs font-bold tracking-wider text-[#7CA22B] uppercase mb-3">
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <div className="text-[11px] sm:text-xs font-bold tracking-wider text-[#7CA22B] uppercase mb-2 sm:mb-3">
             OUR SPECIALIST SERVICES
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#26391B] tracking-tight mb-4">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[#26391B] tracking-tight mb-3 sm:mb-4">
             Everything Your Garden Needs
           </h2>
-          <p className="text-base sm:text-lg text-[#687064] leading-relaxed">
+          <p className="text-sm sm:text-base lg:text-lg text-[#687064] leading-relaxed">
             Practical outdoor solutions, delivered with care and attention to detail.
           </p>
         </div>

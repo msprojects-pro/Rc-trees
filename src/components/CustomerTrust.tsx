@@ -3,9 +3,9 @@ import { Star, ThumbsUp, MapPin, CheckCircle } from 'lucide-react';
 
 export const CustomerTrust: React.FC = () => {
   return (
-    <section className="py-16 bg-white border-b border-[#E2E7D9]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto bg-[#F7F8F3] rounded-2xl p-8 sm:p-12 border border-[#E2E7D9]">
+    <section className="py-12 sm:py-16 bg-white border-b border-[#E2E7D9] w-full max-w-full overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="max-w-4xl mx-auto bg-[#F7F8F3] rounded-2xl p-6 sm:p-10 md:p-12 border border-[#E2E7D9] w-full">
           
           <div className="flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
             
